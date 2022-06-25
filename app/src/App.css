@@ -1,0 +1,111 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.campaigns-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campaign-header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px 10px;
+}
+
+.campaign-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.campaign-title :nth-child(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.campaign-title :nth-child(2) {
+  color: rgb(28, 205, 28);
+}
+
+.campaign-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.campaign-medias {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  height: fit-content;
+  padding: 15px;
+  background-color: aliceblue;
+}
+
+.media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.media-img {
+  height: 200px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.media-video {
+  height: 200px;
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.media-overlay {
+  height: 200px;
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.play-icon {
+  fill: white;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  left: 40px;
+  top: 90px;
+}
+
+.media-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.media-controls button {
+  height: 40px;
+  width: 45px;
+  background-color: white;
+  border: solid 0.5px gray;
+}
+
+.media-controls :nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+.media-controls :nth-child(2) {
+  border-radius: 0 5px 5px 0;
+}
+
+.control-icon {
+  height: 20px;
+  width: 20px;
+  fill: gray;
+}
